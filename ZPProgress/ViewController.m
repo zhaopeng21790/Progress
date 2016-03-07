@@ -30,6 +30,7 @@
     [self.view addSubview:progressView];
     progressView.lineWidth = 2;
     progressView.progressColor = [UIColor colorWithRed:0.99 green:0.47 blue:0.47 alpha:1];
+    progressView.cacheColor = [UIColor colorWithRed:1 green:0.47 blue:0.47 alpha:1];
     
     timer1 = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(progressTimer) userInfo:nil repeats:YES];
     timer2 = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(cacheTimer) userInfo:nil repeats:YES];
